@@ -1,0 +1,53 @@
+1. create a simple server
+2. design the api endpoints (routes)
+    - base url for blogs : api/v1/blogs/
+    - base url for auth  : api/v1/blogs/auth
+3. design the controllers 
+4. connect to the database
+5. design the database schema 
+    - specify the relationship between tables/collections 
+6. connect the routes and controllers and models
+
+
+
+REGISTERING THE USER:
+    1. take the input from the USER
+    2. mongoose validate
+    3. hash the password
+    4. generate jwt token 
+    5. store in the database
+
+LOGIN USER:
+    1. take the input from the USER
+    2. validate the inputs 
+    3. hash the password 
+    4. compare with the existing one - use mongoose instance method for better code optimization. 
+    5. display result
+
+
+AUTHENTICATION :
+    1. When the user requests for blogs, check user authorization. -- middlewares
+    2. only when the authorized, accept the requests
+
+
+CREATING BLOG:
+    1. Take the input from the user and take the currently loged in user from request object
+    2. create the blog and attach the user to it.
+    3. display the message
+
+
+GETTING THE RESULT BY SEARCH QUERY:
+    1. implemented regular expressions
+    2. selected only particular fields
+    3. sorted the documents
+    4. performed pagination 
+
+CRUD: Performed all the crud operations 
+    1. CREATE 
+    2. READ 
+    3. UPDATE
+    4. DELETE 
+
+
+
+
